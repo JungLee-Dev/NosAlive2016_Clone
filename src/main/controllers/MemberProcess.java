@@ -62,40 +62,40 @@ public class MemberProcess extends HttpServlet {
 		System.out.println(branch);
 		
 		if(branch.equals("Regist")){
-			// 회원 등록
+			// Member Regist
 			command = new Command_MemberRegist();
 			command.execute(request, response);
 			
 		} else if (branch.equals("Unregist")){
-			// 회원 탈퇴
+			// Member Unregist
 			command = new Command_MemberUnResist();
 			command.execute(request, response);
 			
 		} else if (branch.equals("Login")) {
-			// 로그인
+			// Login
 			command = new Command_Login();
 			command.execute(request, response);
 			
 		} else if(branch.equals("Logout")) {
-			// 로그 아웃
+			// Logout
 			
 		} else if(branch.equals("GetMemberInfo")) {
-			// 회원 정보 조회
+			// Get Member Information
 			command = new Command_GetMemberInfo();
 			command.execute(request, response);
 			
 		} else if(branch.equals("GetMemberList")) {
-			// 회원 리스트 조회
+			// Get Member List
 			command = new Command_GetMemberList();
 			command.execute(request, response);
 			
 		} else if(branch.equals("BuyTicket")) {
-			// 티켓 구매
+			// Buy Ticket
 			command = new Command_BuyTicket();
 			command.execute(request, response);
 			
 		} else if(branch.equals("UpdateMemberInfo")) {
-			// 회원 정보 업데이트
+			// Update Member Info
 			command = new Command_UpdateMemberInfo();
 			command.execute(request, response);
 			
