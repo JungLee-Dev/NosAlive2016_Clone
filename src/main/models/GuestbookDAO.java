@@ -8,7 +8,7 @@ public class GuestbookDAO {
 	private PreparedStatement pstmt;
 	private ResultSet rs;
 
-	// 생성자 DB 연결
+	// Connect DB / Initialize 
 	public GuestbookDAO() {
 		
 		try{
@@ -37,7 +37,7 @@ public class GuestbookDAO {
 		}
 	}
 	
-	// 전체 글 리스트
+	// Entire List
 	public ArrayList<GuestbookDTO> selectList() {
 		ArrayList<GuestbookDTO> list = new ArrayList<GuestbookDTO>();
 		
