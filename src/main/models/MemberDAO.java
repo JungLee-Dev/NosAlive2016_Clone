@@ -9,7 +9,7 @@ public class MemberDAO {
 	private PreparedStatement pstmt;
 	private ResultSet rs;
 	
-	// 생성자 DB 연결
+	// DB Connection / Initialize
 	public MemberDAO() {
 		
 		try{
@@ -39,7 +39,7 @@ public class MemberDAO {
 		}
 	}
 	
-	// 회원 가입
+	// Regist Member
 	public boolean registMember(MemberDTO dto) {
 		boolean bRet = false;
 		
@@ -89,7 +89,7 @@ public class MemberDAO {
 		return bRet;
 	}
 	
-	// 회원 로그인
+	// Login Member
 	public boolean loginMember(String id, String pw) {
 		
 		pstmt = null;
@@ -132,7 +132,7 @@ public class MemberDAO {
 		return bRet;
 	}
 	
-	// 회원 삭제(탈퇴)
+	// Delete(Unregist) Member
 	public boolean deleteMemeber(String id, String password) {
 		
 		//String query = "delete from member where id = ? and password = ?";
@@ -181,7 +181,7 @@ public class MemberDAO {
 		return bRet;
 	}
 	
-	// 현재 티켓의 전체량 리스트
+	// Total Current Ticket List
 	public ArrayList<Integer> getCurrentTicketCountList(){
 		ArrayList<Integer> ticketList = new ArrayList<Integer>();
 		
@@ -214,7 +214,7 @@ public class MemberDAO {
 		return ticketList;
 	}
 	
-	// 해당 티켓 아이디에 대해 티켓이 몇장 남았는지 반환
+	// Get Current Tickets Per Ticket ID
 	public int getCurrentTicketCount(String ticketID){
 		
 		int retVal = -1;
@@ -246,7 +246,7 @@ public class MemberDAO {
 		return retVal;
 	}
 	
-	// 티켓 구매
+	// Buy Ticket
 	public boolean buyTicket(String userId, String ticketID, int ticketCount){
 		boolean bRet = false;
 		
