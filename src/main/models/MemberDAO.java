@@ -250,11 +250,11 @@ public class MemberDAO {
 	public boolean buyTicket(String userId, String ticketID, int ticketCount){
 		boolean bRet = false;
 		
-		// 티켓갯수가 0보다 작거나 같으면 리턴한다
+		// Return 'false' if the ticket count is equal or less than zero
 		if(ticketCount <= 0){
 			return false;
 		}else{
-		// 티켓 한개를 구매 했으므로 티켓 DB에 카운트를 한개 차감하고 업데이트 한다
+		// System deduct one from the ticket count in the DB and update it since user purchased one ticket
 			ticketCount--;
 		}
 			
@@ -318,7 +318,7 @@ public class MemberDAO {
 	}
 
 	
-	// 회원 정보 조회
+	// Get Member Information
 	public MemberDTO getMemberInfo(String id) {
 		MemberDTO retMember = null;
 		retMember = new MemberDTO();
@@ -368,7 +368,7 @@ public class MemberDAO {
 		return retMember;
 	}
 	
-	// 회원 정보 업데이트
+	// Update Member Information
 	public boolean updateMemberInfo(MemberDTO dto){
 		boolean bRet = false;
 		
@@ -405,7 +405,7 @@ public class MemberDAO {
 		return bRet;
 	}
 	
-	// 회원 정보 리스트 조회
+	// Get Member Information List
 	public ArrayList<MemberDTO> selectList() {
 		ArrayList<MemberDTO> list = new ArrayList<MemberDTO>();
 		
