@@ -7,16 +7,16 @@
 <title>Login</title>
 </head>
 <body>
-	<!-- 로그인 폼 -->
+	<!-- Login Form -->
 	<form action = "Login.do" method = "post">
 
-			<label for = "id">아이디</label><input type = "text" name = "id"><br>
-			<label for = "pw">비밀번호</label><input type = "text" name = "password"><br>
+			<label for = "id">ID</label><input type = "text" name = "id"><br>
+			<label for = "pw">Password</label><input type = "text" name = "password"><br>
 			
-			<input type = "submit" value = "로그인">
+			<input type = "submit" value = "login">
 		
-		<!-- 회원가입 페이지 이동 -->
-		<input type = "button" value = "회원가입" onclick = "location.href = 'MemberRegist.jsp'"/>
+		<!-- Move to sign up page -->
+		<input type = "button" value = "signup" onclick = "location.href = 'MemberRegist.jsp'"/>
 
 	</form>
 </body>
