@@ -9,7 +9,7 @@
 	// 세션이 있는 경우 반환, 없을 경우 생성
 	HttpSession httpSession = request.getSession();
 	//if(httpSession.isNew()){
-		// 새로 생성된 세션에게만 값 세팅
+		// Setting for the newly created session only
 		httpSession.setAttribute("MEMBERID", id);
 		httpSession.setAttribute("PASSWORD", password);
 		httpSession.setAttribute("NICKNANE", nickname);
