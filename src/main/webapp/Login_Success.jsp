@@ -6,7 +6,7 @@
 	String password = request.getParameter("password");
 	String nickname = request.getParameter("nickname");
 			
-	// 세션이 있는 경우 반환, 없을 경우 생성
+	// If a session exists, return this session. If no no session exists, create a session
 	HttpSession httpSession = request.getSession();
 	//if(httpSession.isNew()){
 		// Setting for the newly created session only
@@ -20,18 +20,18 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>로그인 성공</title>
+<title>Login Successful</title>
 </head>
 <body>
-	아이디 :"<%= id %>"<br>
-	패스워드 : "<%= password %>"<br>
-	로그인에 성공하셨습니다.
+	ID :"<%= id %>"<br>
+	Password : "<%= password %>"<br>
+	Login successful
 	
-	<input type = "button" value = "마이페이지" onclick = "location.href = 'MyPage.jsp'"/>
-	<input type = "button" value = "회원정보" onclick = "location.href = 'GetMemberInfo.do'"/>
-	<input type = "button" value = "회원정보 리스트" onclick = "location.href = 'GetMemberList.do'"/>
-	<input type = "button" value = "티켓구매" onclick = "location.href = 'BuyTicket.jsp'"/>
-	<input type = "button" value = "로그아웃" onclick = "location.href = 'Logout.jsp'" />
+	<input type = "button" value = "My Page" onclick = "location.href = 'MyPage.jsp'"/>
+	<input type = "button" value = "Member Info" onclick = "location.href = 'GetMemberInfo.do'"/>
+	<input type = "button" value = "Member List" onclick = "location.href = 'GetMemberList.do'"/>
+	<input type = "button" value = "Buy Ticket" onclick = "location.href = 'BuyTicket.jsp'"/>
+	<input type = "button" value = "Logout" onclick = "location.href = 'Logout.jsp'" />
 	
 </body>
 </html>
