@@ -8,9 +8,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>로그아웃</title>
+<title>Logout</title>
 </head>
 <body>
-	로그아웃을 완료하였습니다.
+	Logout finished
 </body>
 </html>
