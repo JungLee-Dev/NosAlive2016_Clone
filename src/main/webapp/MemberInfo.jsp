@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>회원정보</title>
+<title>Member Information</title>
 </head>
 <body>
 	<%
@@ -19,28 +19,28 @@
 	<table border = "1">
 
 	<tr>
-		<td>아이디</td><td><input name = "id" value = "<%= memberInfo.getId() %>"></td>
+		<td>ID</td><td><input name = "id" value = "<%= memberInfo.getId() %>"></td>
 	</tr>
 	<tr>
-		<td>비밀번호</td><td><input type = "password" name = "password" value = "<%= memberInfo.getPassword() %>"></td>
+		<td>Password</td><td><input type = "password" name = "password" value = "<%= memberInfo.getPassword() %>"></td>
 	</tr>
 	<tr>
-		<td>비밀번호 힌트</td><td><input type = "text" name = "hint" value = "<%= memberInfo.getHint() %>"></td>
+		<td>Password Hint</td><td><input type = "text" name = "hint" value = "<%= memberInfo.getHint() %>"></td>
 	</tr>
 	<tr>
-		<td>이름</td><td><%= memberInfo.getName() %></td>
+		<td>Name</td><td><%= memberInfo.getName() %></td>
 	</tr>
 	<tr>
-		<td>성별</td><td><%= memberInfo.getGender() %></td>
+		<td>Sex</td><td><%= memberInfo.getGender() %></td>
 	</tr>
 	<tr>
-		<td>닉네임</td><td><input type = "text" name = "nickname" value = "<%= memberInfo.getNickname() %>"></td>
+		<td>Nickname</td><td><input type = "text" name = "nickname" value = "<%= memberInfo.getNickname() %>"></td>
 	</tr>
 	<tr>
 	<%
 		String phone = memberInfo.getPhone1() + "-" + memberInfo.getPhone2() + "-" + memberInfo.getPhone3();
 	%>
-		<td>전화번호</td><td><select name = "phone1" value = "<%= memberInfo.getPhone1() %>">
+		<td>Phone</td><td><select name = "phone1" value = "<%= memberInfo.getPhone1() %>">
 				<option value = "010">010</option>
 				<option value = "011">011</option>
 				<option value = "017">017</option>
@@ -49,22 +49,22 @@
 			</td>
 	</tr>
 	<tr>
-		<td>취미</td><td><%= memberInfo.getHobby() %></td>
+		<td>Hobby</td><td><%= memberInfo.getHobby() %></td>
 	</tr>
 	<tr>
-		<td>등급</td><td><%= memberInfo.getGrade() %></td>
+		<td>Class</td><td><%= memberInfo.getGrade() %></td>
 	</tr>
 	<tr>
-		<td>생년월일</td><td><%= memberInfo.getBirth() %></td>
+		<td>Date of Birth</td><td><%= memberInfo.getBirth() %></td>
 	</tr>
 	<tr>
-		<td>자기소개</td><td><textarea name = "intro" rows = "10" cols = "60"><%= memberInfo.getIntro() %></textarea></td>
+		<td>Introduction</td><td><textarea name = "intro" rows = "10" cols = "60"><%= memberInfo.getIntro() %></textarea></td>
 	</tr>
 
 	</table>
-	<input type = "submit" value = "회원정보수정">
-	<input type = "button" name = "cancel" value = "취소" onclick = "location.href = 'Login_Success.jsp'">
-	<input type = "button" value = "회원탈퇴" onclick = "location.href = 'Unregist.do'"/>
+	<input type = "submit" value = "editMemberInfo">
+	<input type = "button" name = "cancel" value = "cancel" onclick = "location.href = 'Login_Success.jsp'">
+	<input type = "button" value = "cancelMembership" onclick = "location.href = 'Unregist.do'"/>
 	</form>
 </body>
 </html>
