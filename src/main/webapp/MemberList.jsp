@@ -8,7 +8,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>회원 리스트</title>
+<title>Member List</title>
 </head>
 <body>
 <%
@@ -17,6 +17,5 @@
 	
 	//list = request.getAttribute("MemberList");
 %>
-
 </body>
 </html>
