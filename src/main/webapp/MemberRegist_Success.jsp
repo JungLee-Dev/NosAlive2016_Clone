@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>회원 가입 성공</title>
+<title>Membership Registration Successful</title>
 </head>
 <body>
-	회원 가입에 성공하였습니다. 감사합니다 ^^
+	Your membership registration has been successful. Thank you.
 	<jsp:forward page = "Login.jsp"/>
 </body>
 </html>
