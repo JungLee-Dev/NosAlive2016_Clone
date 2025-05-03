@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>회원 탈퇴 완료</title>
+<title>Cancel Membership Completed</title>
 </head>
 <body>
-	회원 탈퇴가 완료되었습니다.
+	Your membership cancellation has been completed.
 </body>
 </html>
