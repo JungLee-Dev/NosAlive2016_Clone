@@ -60,7 +60,7 @@ div.car{
 	background: rgb(255, 255, 255);
 	position: relative
 }
-/*아이콘 섹션들*/
+/* Icon sections */
 
 
 div.inner_wrap_01{
@@ -104,7 +104,6 @@ div.inner_wrap_02>ul>li>img{
 	
 }
 
-
 div.inner_wrap_02>ul>li>h4{
 	position: relative;
 	text-align: center;
@@ -112,7 +111,7 @@ div.inner_wrap_02>ul>li>h4{
 	font-weight: 100
 }
 
-/*맵섹션*/
+/* Map section */
 
 div.inner_box{
 	width: 70%;
@@ -127,37 +126,34 @@ div.left{
 	width: 39%;
 	height: 100%;
 	position: absolute;
-	min-width: 220px;
-	
+	min-width: 220px;	
 }
 
 div.left_inner{
 	height: 100%;
 	box-sizing: border-box;
-    padding-left: 15px;
-    padding-right: 30px;
-    width: 100%;
-	min-width: 220px
+    	padding-left: 15px;
+    	padding-right: 30px;
+    	width: 100%;
+	min-width: 220px;
 }
 
 p.text01{
 	position: relative;
 	width: 100%;
 	height: auto;
-	line-height: 160%
+	line-height: 160%;
 }
 
 p.text02{
 	position: relative;
-	top: 20px
-	
+	top: 20px;	
 }
 
 div.googleIcon{
 	position: absolute;
 	bottom: 40px;
-	font-weight: 500
-	
+	font-weight: 500;	
 }
 
 div.right{
@@ -165,13 +161,10 @@ div.right{
 	height: 100%;
 	background: gray;
 	position: absolute;
-	left: 39%
-	
-	
-
+	left: 39%;
 }
 
-/*에어포트섹션*/
+/* Airport section */
 
 div.air_inner{
 	width: 65%;
@@ -180,68 +173,64 @@ div.air_inner{
 	max-width: 750px;
 	min-width: 500px;
 	padding-top: 40px;
-	padding-bottom: 40px
+	padding-bottom: 40px;
 	
 }
 div.icon{
 	width: 50px;
 	height: 70px;
 	position: relative;
-	left: -60px
+	left: -60px;
 }
 
 h2.textair{
 	position: absolute;
 	top: 14px;
-	left: 70px 
+	left: 70px ;
 }
 
-div.air{
-	
+div.air{	
 	height: 60px;
 	position: relative;
 	margin: 0 auto;
-	
-	
 }
 
 div.air_1{	
 	background: rgb(38, 38, 38);
-	position: relative
+	position: relative;
 }
 
 div.air_1:hover{
-	background-color: #ffce00
+	background-color: #ffce00;
 }
 
 div.air_1:hover img.what{
-	filter: invert()
+	filter: invert();
 }
 
 div.air_2{
 	height: 80px;
 	position: relative;
 	display: none;
-	margin-left: 30px
+	margin-left: 30px;
 }
 
 div.air_3{
 	background: rgb(38, 38, 38);
-	position: relative
+	position: relative;
 }
 div.air_3:hover{
-	background-color: #ffce00
+	background-color: #ffce00;
 }
-
 div.air_4{
 	height: auto;
 	position: relative;
 	margin-bottom: 50px;
 	display: none;
-	margin-left: 30px
-	
+	margin-left: 30px;	
 }
-/*트레인섹션*/
+
+/* Train section */
 
 div.tra_inner{
 	width: 65%;
@@ -250,25 +239,23 @@ div.tra_inner{
 	max-width: 750px;
 	min-width: 500px;
 	padding-top: 40px;
-	padding-bottom: 40px
-	
+	padding-bottom: 40px;	
 }
 
 div.icon_tra{
 	width: 50px;
 	height: 70px;
 	position: relative;
-	left: -60px
+	left: -60px;
 }
 
 h2.texttra{
 	position: absolute;
 	top: 14px;
-	left: 70px 
+	left: 70px;
 }
 
-div.tra{
-	
+div.tra{	
 	height: 60px;
 	position: relative;
 	margin: 0 auto;
@@ -276,11 +263,11 @@ div.tra{
 
 div.tra_1{	
 	background: rgb(38, 38, 38);
-	position: relative
+	position: relative;
 }
 
 div.tra_1:hover{
-	background-color: #ffce00
+	background-color: #ffce00;
 }
 
 div.tra_2{
@@ -289,15 +276,15 @@ div.tra_2{
 	margin-top: 10px;
 	margin-bottom: 50px;
 	display: none;
-	margin-left: 30px
+	margin-left: 30px;
 }
 
 div.tra_3{
 	background: rgb(38, 38, 38);
-	position: relative
+	position: relative;
 }
 div.tra_3:hover{
-	background-color: #ffce00
+	background-color: #ffce00;
 }
 
 div.tra_4{
@@ -306,11 +293,10 @@ div.tra_4{
 	margin-top: 10px;
 	margin-bottom: 50px;
 	display: none;
-	margin-left: 30px
-	
+	margin-left: 30px;	
 }
 
-/*버스섹션*/
+/* Bus section */
 
 
 div.bus_inner{
@@ -321,25 +307,23 @@ div.bus_inner{
 	max-width: 750px;
 	min-width: 500px;
 	padding-top: 4px;
-	padding-bottom: 40px
-	
+	padding-bottom: 40px;	
 }
 
 div.icon_bus{
 	width: 50px;
 	height: 70px;
 	position: relative;
-	left: -60px
+	left: -60px;
 }
 
 h2.textbus{
 	position: absolute;
 	top: 14px;
-	left: 70px 
+	left: 70px;
 }
 
-div.buss{
-	
+div.buss{	
 	height: 60px;
 	position: relative;
 	margin: 0 auto;
@@ -347,11 +331,11 @@ div.buss{
 
 div.bus_1{	
 	background: rgb(38, 38, 38);
-	position: relative
+	position: relative;
 }
 
 div.bus_1:hover{
-	background-color: #ffce00
+	background-color: #ffce00;
 }
 
 div.bus_2{
@@ -360,15 +344,16 @@ div.bus_2{
 	margin-top: 10px;
 	margin-bottom: 50px;
 	display: none;
-	margin-left: 30px
+	margin-left: 30px;
 }
 
 div.bus_3{
 	background: rgb(38, 38, 38);
-	position: relative
+	position: relative;
 }
+
 div.bus_3:hover{
-	background-color: #ffce00
+	background-color: #ffce00;
 }
 
 div.bus_4{
@@ -377,16 +362,16 @@ div.bus_4{
 	margin-top: 10px;
 	margin-bottom: 50px;
 	display: none;
-	margin-left: 30px
-	
+	margin-left: 30px;	
 }
 
 div.bus_5{
 	background: rgb(38, 38, 38);
-	position: relative
+	position: relative;
 }
+
 div.bus_5:hover{
-	background-color: #ffce00
+	background-color: #ffce00;
 }
 
 div.bus_6{
@@ -395,22 +380,13 @@ div.bus_6{
 	margin-top: 10px;
 	margin-bottom: 50px;
 	display: none;
-	margin-left: 30px
-	
+	margin-left: 30px;	
 }
 
+/* Icon spin */
 
 
-
-
-/*아이콘 회전*/
-
-
-
-
-
-
-/*아코디언 백그라운드 색 바꾸기*/
+/* Change color on accordion background */
 
 .changeBackground{
    background-color: #ffce00 !important;
@@ -426,22 +402,10 @@ img.iconrot{
 }
 
 .rotationicon{
-	transform: rotate(45deg);
-	
+	transform: rotate(45deg);	
 }
 
 /*//////////////////////*/
-
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (max-width:768px) {
 	
