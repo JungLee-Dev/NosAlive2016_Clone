@@ -3,15 +3,12 @@
 
 #wrap{
 	width: 100%;
-	height: 100%;
-	
-		
+	height: 100%;		
 }	
 
 div.lineupMain{
 	width: 100%;
-	height: 420px;
-	
+	height: 420px;	
 }
 
 div.lineupBox{
@@ -25,20 +22,15 @@ div.tableTicket{
 	height: 500px;
 	background: red;
 	position: relative;
-	top: 960px
-	
+	top: 960px;	
 }
 
-
-
-
-/*라인업 뮤지선 박스*/
+/* Lineup Musician Box */
 
 
 .lineupUl{
 	width: 100%;
-	position: relative
-	
+	position: relative;	
 }
 
 .lineupUl>li{
@@ -48,8 +40,7 @@ div.tableTicket{
 	float: left;
 	text-align: center;
 	overflow: hidden;
-	line-height: 16;
-	
+	line-height: 16;	
 }
 
 .lineupUl>li>img{
@@ -57,23 +48,14 @@ div.tableTicket{
 	height: 150%;
 	position: relative;
 	top: -10px;
-	transition: all 1s	
-	
-
-	
+	transition: all 1s;	
 }
+
 .lineupUl>li>img:hover{
 	margin: 0 auto;
 	transform: scale(1.1,1.1);
-	z-index: 3
+	z-index: 3;
 }
-
-
-
-
-
-
-
 
 h1.lineup_01{
 	position: relative;
@@ -82,8 +64,7 @@ h1.lineup_01{
 	font-size: 20;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 200;
-	letter-spacing: -2px
-
+	letter-spacing: -2px;
 }
 
 div.timetable{
@@ -94,21 +75,22 @@ div.timetable{
 	margin: 0 auto;
 	background: #87c7ff;
 	border-radius: 6px;
-	cursor: pointer
+	cursor: pointer;
 }
+
 a.link{
 	display: block;
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	top: 0;
-	left: 0
+	left: 0;
 }
 
 div.timetable>p{
 	text-align: center;
 	line-height: 55px;
-	color: white
+	color: white;
 }
 
 h1.lineup_02{
@@ -118,24 +100,9 @@ h1.lineup_02{
 	font-size: 20;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 200;
-	letter-spacing: -2px
+	letter-spacing: -2px;
 }
-
 
 @media screen and (max-width:768px) {
-	.lineupUl>li{float: none;width: 500px;height: 400px;margin: 0 auto}
-	
-
-	
+	.lineupUl>li{float: none;width: 500px;height: 400px;margin: 0 auto}	
 }
-	
-
-
-
-
-
-
-
-
-
-
