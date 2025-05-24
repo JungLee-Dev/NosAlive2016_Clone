@@ -1,8 +1,6 @@
 package controllers;
 
 import java.io.IOException;
-
-
 import java.sql.Date;
 
 import javax.servlet.ServletException;
@@ -101,5 +99,4 @@ public class MemberProcess extends HttpServlet {
 			
 		}
 	}
-
 }
