@@ -64,8 +64,8 @@ public class MemberDAO {
 			pstmt.setString(11, dto.getHint());
 			pstmt.setDate(12, (Date) dto.getBirth());
 			pstmt.setString(13, dto.getGender());
+
 			pstmt.executeUpdate();
-			
 			pstmt.close();
 			
 			bRet = true;
