@@ -37,7 +37,7 @@ public class Command_BuyTicket implements Command{
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		}else{
+		} else {
 			System.out.println("buyticket failed");
 		}
 	}
