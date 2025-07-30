@@ -59,7 +59,7 @@ public class Command_MemberRegist implements Command{
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		}else{
+		} else {
 			System.out.println("regist failed");
 		}
 	}
