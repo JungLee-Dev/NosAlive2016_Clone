@@ -25,7 +25,7 @@ public class Command_BuyTicket implements Command{
 		MemberDAO ticketDao = new MemberDAO();
 		bBuyTicket = ticketDao.buyTicket(id, ticketID, ticketCount);
 		
-		if(bBuyTicket){
+		if(bBuyTicket) {
 			System.out.println("buyticket success");
 			RequestDispatcher dispatcher = request.getRequestDispatcher("BuyTicket_Success.jsp");
 			try {
