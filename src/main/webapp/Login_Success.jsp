@@ -31,7 +31,6 @@
 	<input type = "button" value = "Member Info" onclick = "location.href = 'GetMemberInfo.do'"/>
 	<input type = "button" value = "Member List" onclick = "location.href = 'GetMemberList.do'"/>
 	<input type = "button" value = "Buy Ticket" onclick = "location.href = 'BuyTicket.jsp'"/>
-	<input type = "button" value = "Logout" onclick = "location.href = 'Logout.jsp'" />
-	
+	<input type = "button" value = "Logout" onclick = "location.href = 'Logout.jsp'" />	
 </body>
 </html>
