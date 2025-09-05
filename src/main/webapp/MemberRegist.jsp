@@ -15,7 +15,6 @@ div>title {width:200px;background:#f00}
 	<div id = "wrap">
 	<b><font size = "7" color = "gray">Sign Up</font></b>
 	<form action = "Regist.do" method = "post">
-
 		ID : <input type = "text" name = "id"><br>
 		Password : <input type = "password" name = "password"><br>
 		Password Hint : <input type = "text" name = "hint"><br>
@@ -36,8 +35,7 @@ div>title {width:200px;background:#f00}
 				- <input type = "text" name = "phone3" size = 10><br>
 				<textarea name = "intro" rows = "10" cols = "60">Introduction</textarea><br><br>
 			<br/>	
-				<input type = "submit" value = "Submit"/><input type = "reset" value = "Reset"/>
-		
+				<input type = "submit" value = "Submit"/><input type = "reset" value = "Reset"/>		
 	</form>
 	</div>
 </body>
