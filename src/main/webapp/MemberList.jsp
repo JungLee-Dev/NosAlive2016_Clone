@@ -13,8 +13,7 @@
 <body>
 <%
 	MemberDTO memberInfo = new MemberDTO();
-	ArrayList<MemberDTO> list = new ArrayList<MemberDTO>();
-	
+	ArrayList<MemberDTO> list = new ArrayList<MemberDTO>();	
 	//list = request.getAttribute("MemberList");
 %>
 </body>
