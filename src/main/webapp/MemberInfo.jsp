@@ -10,8 +10,7 @@
 <body>
 	<%
 	MemberDTO memberInfo = new MemberDTO();
-	memberInfo = (MemberDTO)request.getAttribute("Member");
-	
+	memberInfo = (MemberDTO)request.getAttribute("Member");	
 	String password = memberInfo.getPassword();
 	%>
 	
