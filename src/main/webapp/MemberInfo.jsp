@@ -16,7 +16,6 @@
 	
 	<form name = "updateForm" action = "UpdateMemberInfo.do" method = "post">
 	<table border = "1">
-
 	<tr>
 		<td>ID</td><td><input name = "id" value = "<%= memberInfo.getId() %>"></td>
 	</tr>
@@ -59,7 +58,6 @@
 	<tr>
 		<td>Introduction</td><td><textarea name = "intro" rows = "10" cols = "60"><%= memberInfo.getIntro() %></textarea></td>
 	</tr>
-
 	</table>
 	<input type = "submit" value = "editMemberInfo">
 	<input type = "button" name = "cancel" value = "cancel" onclick = "location.href = 'Login_Success.jsp'">
