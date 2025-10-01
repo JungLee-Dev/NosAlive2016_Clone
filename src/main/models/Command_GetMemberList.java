@@ -33,7 +33,8 @@ public class Command_GetMemberList implements Command{
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		}else{
+
+		} else {
 			System.out.println("get member list falied");
 		}
 	}
