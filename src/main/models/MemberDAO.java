@@ -12,9 +12,9 @@ public class MemberDAO {
 	// DB Connection / Initialize
 	public MemberDAO() {
 		
-		try{
+		try {
 			Class.forName("com.mysql.jdbc.Driver");
-		}catch(ClassNotFoundException ex){
+		} catch(ClassNotFoundException ex) {
 			try {
 				throw new ServletException("Class Connection failed");
 			} catch (ServletException e) {
@@ -27,9 +27,9 @@ public class MemberDAO {
 		String id = "root";
 		String pw = "1111";
 		
-		try{
+		try {
 			conn = DriverManager.getConnection(url, id, pw);
-		}catch(SQLException ex){
+		 }catch(SQLException ex) {
 			try {
 				throw new ServletException("DB Connection failed");
 			} catch (ServletException e) {
@@ -48,7 +48,7 @@ public class MemberDAO {
 		String query = "insert into member(id, password, name, nickname, phone1, phone2, phone3, introduce,hobby, grade, hint, birth, gender)"
 				+ "values(?,?,?,?,?,?,?,?,?,?,?,?,?)";
 		
-		try{
+		try {
 			pstmt = conn.prepareStatement(query);
 			
 			pstmt.setString(1, dto.getId());
@@ -70,17 +70,17 @@ public class MemberDAO {
 			
 			bRet = true;
 			
-		}catch(Exception e){
+		} catch(Exception e) {
 			
 			e.printStackTrace();
 			System.out.println(e.getMessage());
 			
-		}finally{
+		} finally {
 			
-			try{
+			try {
 				if(pstmt != null) pstmt.close();
 				if(conn != null) conn.close();
-			}catch(Exception e2){
+			} catch(Exception e2) {
 				e2.printStackTrace();
 				System.out.println(e2.getMessage());
 			}
@@ -97,7 +97,7 @@ public class MemberDAO {
 		boolean bRet = false;
 		String query = "select password from member where id = ?";
 		
-		try{
+		try {
 			pstmt = conn.prepareStatement(query);
 			pstmt.setString(1, id);
 			rs = pstmt.executeQuery();
@@ -109,21 +109,21 @@ public class MemberDAO {
 				
 			if(rs.getString(1).equals(pw)){
 				bRet = true;
-			}else{
+			} else {
 				bRet = false;
 			}
 			
-		}catch(Exception e){
+		} catch(Exception e) {
 			
 			e.printStackTrace();
 			System.out.println(e.getMessage());
 			
-		}finally{
+		} finally {
 			
-			try{
+			try {
 				if(pstmt != null) pstmt.close();
 				if(conn != null) conn.close();
-			}catch(Exception e2){
+			} catch(Exception e2) {
 				e2.printStackTrace();
 				System.out.println(e2.getMessage());
 			}
@@ -140,7 +140,7 @@ public class MemberDAO {
 		pstmt = null;
 		rs = null;
 		
-		try{
+		try {
 			
 			String query = "select password from member where id = ?";
 			pstmt = conn.prepareStatement(query);
@@ -162,17 +162,17 @@ public class MemberDAO {
 				}
 			}
 			
-		}catch(Exception e){
+		} catch(Exception e) {
 			
 			e.printStackTrace();
 			System.out.println(e.getMessage());
 			
-		}finally{
+		} finally {
 			
-			try{
+			try {
 				if(pstmt != null) pstmt.close();
 				if(conn != null) conn.close();
-			}catch(Exception e2){
+			} catch(Exception e2) {
 				e2.printStackTrace();
 				System.out.println(e2.getMessage());
 			}
@@ -189,7 +189,7 @@ public class MemberDAO {
 		rs = null;
 		String query = "select count from ticket order by type asc";
 		
-		try{
+		try {
 			pstmt = conn.prepareStatement(query);
 			rs = pstmt.executeQuery();
 			
@@ -198,14 +198,14 @@ public class MemberDAO {
 				ticketList.add(resultCount);
 				System.out.println(resultCount);
 			}
-		}catch(Exception e){
+		} catch(Exception e) {
 			e.printStackTrace();
 			System.out.println(e.getMessage());
-		}finally{
-			try{
+		} finally {
+			try {
 				if(pstmt != null) pstmt.close();
 				if(conn != null) conn.close();
-			}catch(Exception e2){
+			} catch(Exception e2) {
 				e2.printStackTrace();
 				System.out.println(e2.getMessage());
 			}
@@ -222,7 +222,7 @@ public class MemberDAO {
 		rs = null;
 		String query = "select count from ticket where type = ?";
 		
-		try{	
+		try {	
 			pstmt = conn.prepareStatement(query);
 			pstmt.setString(1, ticketID);
 			rs = pstmt.executeQuery();
@@ -230,14 +230,14 @@ public class MemberDAO {
 			if(rs.next()){
 				retVal = rs.getInt(1);
 			}
-		}catch(Exception e){
+		} catch(Exception e) {
 			e.printStackTrace();
 			System.out.println(e.getMessage());
-		}finally{
-			try{
+		} finally {
+			try {
 				if(pstmt != null) pstmt.close();
 				if(conn != null) conn.close();
-			}catch(Exception e2){
+			} catch (Exception e2){
 				e2.printStackTrace();
 				System.out.println(e2.getMessage());
 			}
