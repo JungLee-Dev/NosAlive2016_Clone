@@ -1,4 +1,4 @@
-package models;
+ package models;
 
 import java.io.IOException;
 
@@ -30,7 +30,7 @@ public class Command_Login implements Command{
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		}else{
+		} else {
 			System.out.println("login failed");
 			RequestDispatcher dispatcher = request.getRequestDispatcher("Login_Failed.jsp");
 			try {
