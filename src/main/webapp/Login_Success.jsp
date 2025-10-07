@@ -13,8 +13,7 @@
 		httpSession.setAttribute("MEMBERID", id);
 		httpSession.setAttribute("PASSWORD", password);
 		httpSession.setAttribute("NICKNANE", nickname);
-	//}
-	
+	//}	
 %>
 <!DOCTYPE html>
 <html>
