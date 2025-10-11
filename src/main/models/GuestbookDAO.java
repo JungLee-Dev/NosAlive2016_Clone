@@ -13,10 +13,10 @@ public class GuestbookDAO {
 		
 		try{
 			Class.forName("com.mysql.jdbc.Driver");
-		}catch(ClassNotFoundException ex){
+		} catch(ClassNotFoundException ex) {
 			try{
 				throw new ServletException("Class Connection failed");
-			}catch(ServletException e){
+			} catch(ServletException e) {
 				e.printStackTrace();
 			}
 		}
@@ -27,10 +27,10 @@ public class GuestbookDAO {
 		
 		try{
 			conn = DriverManager.getConnection(url, id, pw);
-		}catch(SQLException ex){
+		} catch(SQLException ex) {
 			try {
 				throw new ServletException("DB Connection failed");
-			} catch (ServletException e) {
+			} catch(ServletException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
@@ -57,19 +57,18 @@ public class GuestbookDAO {
 				list.add(dto);
 			}
 			
-		}catch(Exception e){
+		} catch(Exception e) {
 			e.printStackTrace();
 			System.out.println(e.getMessage());
-		}finally{
+		} finally {
 			try{
 				if(pstmt != null) pstmt.close();
 				if(conn != null) conn.close();
-			}catch(Exception e2){
+			} catch(Exception e2) {
 				e2.printStackTrace();
 				System.out.println(e2.getMessage());
 			}
-		}
-		
+		}		
 		return list;
 	}
 	
