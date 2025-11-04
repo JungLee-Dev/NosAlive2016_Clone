@@ -49,8 +49,7 @@ public class MemberDAO {
 				+ "values(?,?,?,?,?,?,?,?,?,?,?,?,?)";
 		
 		try {
-			pstmt = conn.prepareStatement(query);
-			
+			pstmt = conn.prepareStatement(query);			
 			pstmt.setString(1, dto.getId());
 			pstmt.setString(2, dto.getPassword());
 			pstmt.setString(3, dto.getName());
@@ -76,7 +75,6 @@ public class MemberDAO {
 			System.out.println(e.getMessage());
 			
 		} finally {
-			
 			try {
 				if(pstmt != null) pstmt.close();
 				if(conn != null) conn.close();
