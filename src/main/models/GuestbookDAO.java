@@ -10,11 +10,10 @@ public class GuestbookDAO {
 
 	// Connect DB / Initialize 
 	public GuestbookDAO() {
-		
-		try{
+		try {
 			Class.forName("com.mysql.jdbc.Driver");
 		} catch(ClassNotFoundException ex) {
-			try{
+			try {
 				throw new ServletException("Class Connection failed");
 			} catch(ServletException e) {
 				e.printStackTrace();
@@ -25,7 +24,7 @@ public class GuestbookDAO {
 		String id = "root";
 		String pw = "1111";
 		
-		try{
+		try {
 			conn = DriverManager.getConnection(url, id, pw);
 		} catch(SQLException ex) {
 			try {
@@ -44,7 +43,7 @@ public class GuestbookDAO {
 		pstmt = null;
 		String query = "select number, name, content, password from guestbook order by number desc";
 		
-		try{
+		try {
 			pstmt = conn.prepareStatement(query);
 			rs = pstmt.executeQuery();
 			
@@ -61,7 +60,7 @@ public class GuestbookDAO {
 			e.printStackTrace();
 			System.out.println(e.getMessage());
 		} finally {
-			try{
+			try {
 				if(pstmt != null) pstmt.close();
 				if(conn != null) conn.close();
 			} catch(Exception e2) {
@@ -70,6 +69,5 @@ public class GuestbookDAO {
 			}
 		}		
 		return list;
-	}
-	
+	}	
 }
