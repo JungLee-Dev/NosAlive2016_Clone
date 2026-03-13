@@ -39,13 +39,15 @@
 	<%
 		String phone = memberInfo.getPhone1() + "-" + memberInfo.getPhone2() + "-" + memberInfo.getPhone3();
 	%>
-		<td>Phone</td><td><select name = "phone1" value = "<%= memberInfo.getPhone1() %>">
+		<td>Phone</td>
+		<td>
+			<select name = "phone1" value = "<%= memberInfo.getPhone1() %>">
 				<option value = "010">010</option>
 				<option value = "011">011</option>
 				<option value = "017">017</option>
 			</select> - <input type = "text" name = "phone2" value = "<%= memberInfo.getPhone2() %>" size = 10>
 			- <input type = "text" name = "phone3" value = "<%= memberInfo.getPhone3() %>" size = 10>
-			</td>
+		</td>
 	</tr>
 	<tr>
 		<td>Hobby</td><td><%= memberInfo.getHobby() %></td>
