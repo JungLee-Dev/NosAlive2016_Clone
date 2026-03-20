@@ -25,32 +25,33 @@ $(document).ready(function(){
 	});
 
 function GettingHere(){
-		location.href='GettingHere.html';
-	}
+	location.href='GettingHere.html';
+}
 	
 function LineupPage(){
-		location.href='LineupPage.html';
-	}
+	location.href='LineupPage.html';
+}
 	
 function FAQ(){
-		location.href='FAQ.html';
-	}
+	location.href='FAQ.html';
+}
 	
 function nosalive(){
-		location.href='index.html';
-	}
+	location.href='index.html';
+}
 	
 function ticket(){
-		location.href='ticket.html';
-	}
+	location.href='ticket.html';
+}
 	
 function sponsors(){
-		location.href='sponsors.html';
-	}
+	location.href='sponsors.html';
+}
+
 function atthefestival(){
-		location.href='atthefestival.html';
-	}
+	location.href='atthefestival.html';
+}
 
 function schedule(){
-		location.href='images/Lineup/allLineUp.jpg';
+	location.href='images/Lineup/allLineUp.jpg';
 }
