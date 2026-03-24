@@ -70,10 +70,8 @@ public class MemberDAO {
 			bRet = true;
 			
 		} catch(Exception e) {
-			
 			e.printStackTrace();
-			System.out.println(e.getMessage());
-			
+			System.out.println(e.getMessage());			
 		} finally {
 			try {
 				if(pstmt != null) pstmt.close();
