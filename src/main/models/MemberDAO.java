@@ -97,8 +97,7 @@ public class MemberDAO {
 			pstmt = conn.prepareStatement(query);
 			pstmt.setString(1, id);
 			rs = pstmt.executeQuery();
-			
-			
+						
 			if(!rs.next()){
 				bRet = false;
 			}
@@ -136,8 +135,7 @@ public class MemberDAO {
 		pstmt = null;
 		rs = null;
 		
-		try {
-			
+		try {			
 			String query = "select password from member where id = ?";
 			pstmt = conn.prepareStatement(query);
 			pstmt.setString(1, id);
@@ -159,10 +157,8 @@ public class MemberDAO {
 			}
 			
 		} catch(Exception e) {
-			
 			e.printStackTrace();
-			System.out.println(e.getMessage());
-			
+			System.out.println(e.getMessage());			
 		} finally {
 			
 			try {
