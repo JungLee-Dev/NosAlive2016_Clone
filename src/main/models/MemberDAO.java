@@ -29,7 +29,7 @@ public class MemberDAO {
 		
 		try {
 			conn = DriverManager.getConnection(url, id, pw);
-		 }catch(SQLException ex) {
+		 } catch(SQLException ex) {
 			try {
 				throw new ServletException("DB Connection failed");
 			} catch (ServletException e) {
@@ -245,7 +245,7 @@ public class MemberDAO {
 		// Return 'false' if the ticket count is equal or less than zero
 		if(ticketCount <= 0){
 			return false;
-		}else{
+		} else {
 		// System deduct one from the ticket count in the DB and update it since user purchased one ticket
 			ticketCount--;
 		}
@@ -281,10 +281,10 @@ public class MemberDAO {
 			bRet = true;
 			conn.commit();
 			
-		}catch(Exception e){
+		} catch(Exception e) {
 			e.printStackTrace();
 			System.out.println(e.getMessage());
-			if(conn != null){
+			if(conn != null) {
 				try {
 					conn.rollback();
 				} catch (SQLException e1) {
@@ -293,14 +293,14 @@ public class MemberDAO {
 					System.out.println(e1.getMessage());
 				}
 			}
-		}finally{
+		} finally {
 			try{
 				if(pstmt != null){
 					pstmt.close();
 					memberPs.close();
 				}
 				if(conn != null) conn.close();
-			}catch(Exception e2){
+			} catch(Exception e2) {
 				e2.printStackTrace();
 				System.out.println(e2.getMessage());
 			}
@@ -347,11 +347,11 @@ public class MemberDAO {
 			e.printStackTrace();
 			System.out.println(e.getMessage());
 			
-		}finally{
+		} finally {
 			try{
 				if(pstmt != null) pstmt.close();
 				if(conn != null) conn.close();
-			}catch(Exception e2){
+			} catch(Exception e2) {
 				e2.printStackTrace();
 				System.out.println(e2.getMessage());
 			}
@@ -380,16 +380,16 @@ public class MemberDAO {
 			pstmt.setString(8, dto.getId());			
 			int rn = pstmt.executeUpdate();
 			bRet = true;			
-		}catch(Exception e){
+		} catch(Exception e) {
 			
 			e.printStackTrace();
 			System.out.println(e.getMessage());
 			
-		}finally{
-			try{
+		} finally {
+			try {
 				if(pstmt != null) pstmt.close();
 				if(conn != null) conn.close();
-			}catch(Exception e2){
+			} catch(Exception e2) {
 				e2.printStackTrace();
 				System.out.println(e2.getMessage());
 			}
