@@ -348,7 +348,7 @@ public class MemberDAO {
 			System.out.println(e.getMessage());
 			
 		} finally {
-			try{
+			try {
 				if(pstmt != null) pstmt.close();
 				if(conn != null) conn.close();
 			} catch(Exception e2) {
@@ -404,7 +404,7 @@ public class MemberDAO {
 		pstmt = null;
 		String query = "select * from member";
 		
-		try{
+		try {
 			pstmt = conn.prepareStatement(query);
 			rs = pstmt.executeQuery();
 			
@@ -426,14 +426,14 @@ public class MemberDAO {
 				dto.setGender(rs.getString(13));
 				list.add(dto);
 			}
-		}catch(Exception e){
+		} catch(Exception e) {
 			e.printStackTrace();
 			System.out.println(e.getMessage());
-		}finally{
-			try{
+		} finally {
+			try {
 				if(pstmt != null) pstmt.close();
 				if(conn != null) conn.close();
-			}catch(Exception e2){
+			} catch(Exception e2 ){
 				e2.printStackTrace();
 				System.out.println(e2.getMessage());
 			}
