@@ -356,28 +356,28 @@ div.panel.show {
 	<div class="footer">
 			<div class="footer_menu">
 			<div class="footer_menu_inner">
-			<ul>
-				<li>NEWS</li>
-				<li>LINEUP
-					<ul class="nummm1">
-						<li class="nummm2" onclick="LineupPage()">Lineup</li>
-						<li class="nummm2" onclick="schedule()">schedule</li>
-					</ul>
-				</li>
-				<li>THE FESTIVAL
-					<ul class="nummm1">
-						<li class="nummm2" onclick="GettingHere()">Getting Here</li>
-						<li class="nummm2">Where to Stay</li>
-						<li class="nummm2" onclick="atthefestival">At the Festival</li>
-						<li class="nummm2">Photo</li>
-						<li class="nummm2">Video</li>
-						<li class="nummm2" onclick="FAQ()">FAQ</li>
-					</ul>
-				</li>
-				<li>PRESS</li>
-				<li onclick="sponsors()">SPONSORS</li>
-				<li>BUYTICKET</li>
-			</ul>
+				<ul>
+					<li>NEWS</li>
+					<li>LINEUP
+						<ul class="nummm1">
+							<li class="nummm2" onclick="LineupPage()">Lineup</li>
+							<li class="nummm2" onclick="schedule()">schedule</li>
+						</ul>
+					</li>
+					<li>THE FESTIVAL
+						<ul class="nummm1">
+							<li class="nummm2" onclick="GettingHere()">Getting Here</li>
+							<li class="nummm2">Where to Stay</li>
+							<li class="nummm2" onclick="atthefestival">At the Festival</li>
+							<li class="nummm2">Photo</li>
+							<li class="nummm2">Video</li>
+							<li class="nummm2" onclick="FAQ()">FAQ</li>
+						</ul>
+					</li>
+					<li>PRESS</li>
+					<li onclick="sponsors()">SPONSORS</li>
+					<li>BUYTICKET</li>
+				</ul>
 				</div>
 			</div>
 			<div class="footerIcon"><img src="images/footer.png">
@@ -398,10 +398,10 @@ div.panel.show {
 var acc = document.getElementsByClassName("buttonsss");
 var i;
 for (i = 0; i < acc.length; i++) {
-    acc[i].onclick = function(){
+    acc[i].onclick = function() {
         this.classList.toggle("active");
         this.nextElementSibling.classList.toggle("show");
-  }
+  	}
 }
 
 $("button.dmap").click(function() {
