@@ -37,7 +37,7 @@ public class Command_GetMemberInfo implements Command{
 				e.printStackTrace();
 			}
 
-		}else{
+		} else {
 			System.out.println("member info inqiure failed");
 		}
 	}
