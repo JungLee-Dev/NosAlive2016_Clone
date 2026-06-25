@@ -33,7 +33,10 @@
 		<td>Sex</td><td><%= memberInfo.getGender() %></td>
 	</tr>
 	<tr>
-		<td>Nickname</td><td><input type = "text" name = "nickname" value = "<%= memberInfo.getNickname() %>"></td>
+		<td>Nickname</td>
+		<td>
+			<input type = "text" name = "nickname" value = "<%= memberInfo.getNickname() %>">
+		</td>
 	</tr>
 	<tr>
 	<%
@@ -59,7 +62,10 @@
 		<td>Date of Birth</td><td><%= memberInfo.getBirth() %></td>
 	</tr>
 	<tr>
-		<td>Introduction</td><td><textarea name = "intro" rows = "10" cols = "60"><%= memberInfo.getIntro() %></textarea></td>
+		<td>Introduction</td>
+		<td>
+			<textarea name = "intro" rows = "10" cols = "60"><%= memberInfo.getIntro() %></textarea>
+		</td>
 	</tr>
 	</table>
 	<input type = "submit" value = "editMemberInfo">
