@@ -56,7 +56,7 @@ public class MemberProcess extends HttpServlet {
 	
 		System.out.println(branch);
 		
-		if(branch.equals("Regist")){
+		if (branch.equals("Regist")){
 			// Member Regist
 			command = new Command_MemberRegist();
 			command.execute(request, response);			
@@ -68,21 +68,21 @@ public class MemberProcess extends HttpServlet {
 			// Login
 			command = new Command_Login();
 			command.execute(request, response);			
-		} else if(branch.equals("Logout")) {
+		} else if (branch.equals("Logout")) {
 			// Logout			
-		} else if(branch.equals("GetMemberInfo")) {
+		} else if (branch.equals("GetMemberInfo")) {
 			// Get Member Information
 			command = new Command_GetMemberInfo();
 			command.execute(request, response);			
-		} else if(branch.equals("GetMemberList")) {
+		} else if (branch.equals("GetMemberList")) {
 			// Get Member List
 			command = new Command_GetMemberList();
 			command.execute(request, response);			
-		} else if(branch.equals("BuyTicket")) {
+		} else if (branch.equals("BuyTicket")) {
 			// Buy Ticket
 			command = new Command_BuyTicket();
 			command.execute(request, response);			
-		} else if(branch.equals("UpdateMemberInfo")) {
+		} else if (branch.equals("UpdateMemberInfo")) {
 			// Update Member Info
 			command = new Command_UpdateMemberInfo();
 			command.execute(request, response);			
