@@ -25,7 +25,7 @@ public class Command_MemberUnResist implements Command {
 		boolean bUnRegist = false;
 		bUnRegist = dao.deleteMemeber(id, password);
 		
-		if(bUnRegist){
+		if(bUnRegist) {
 			System.out.println("Unregist success");
 			RequestDispatcher dispatcher = request.getRequestDispatcher("MemberUnregist_Success.jsp");
 			try {
@@ -37,7 +37,7 @@ public class Command_MemberUnResist implements Command {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		}else{
+		} else {
 			System.out.println("Unregist falied");
 		}
 	}
