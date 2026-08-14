@@ -207,7 +207,7 @@ public class MemberDAO {
 	}
 	
 	// Get Current Tickets Per Ticket ID
-	public int getCurrentTicketCount(String ticketID){
+	public int getCurrentTicketCount(String ticketID) {
 		
 		int retVal = -1;
 		pstmt = null;
@@ -219,7 +219,7 @@ public class MemberDAO {
 			pstmt.setString(1, ticketID);
 			rs = pstmt.executeQuery();
 			
-			if(rs.next()){
+			if(rs.next()) {
 				retVal = rs.getInt(1);
 			}
 		} catch(Exception e) {
@@ -229,7 +229,7 @@ public class MemberDAO {
 			try {
 				if(pstmt != null) pstmt.close();
 				if(conn != null) conn.close();
-			} catch (Exception e2){
+			} catch (Exception e2) {
 				e2.printStackTrace();
 				System.out.println(e2.getMessage());
 			}
@@ -239,7 +239,7 @@ public class MemberDAO {
 	}
 	
 	// Buy Ticket
-	public boolean buyTicket(String userId, String ticketID, int ticketCount){
+	public boolean buyTicket(String userId, String ticketID, int ticketCount) {
 		boolean bRet = false;
 		
 		// Return 'false' if the ticket count is equal or less than zero
@@ -342,7 +342,7 @@ public class MemberDAO {
 			retMember.setBirth(rs.getDate(12));
 			retMember.setGender(rs.getString(13));
 			
-		}catch(Exception e){
+		} catch(Exception e) {
 			
 			e.printStackTrace();
 			System.out.println(e.getMessage());
@@ -361,7 +361,7 @@ public class MemberDAO {
 	}
 	
 	// Update Member Information
-	public boolean updateMemberInfo(MemberDTO dto){
+	public boolean updateMemberInfo(MemberDTO dto) {
 		boolean bRet = false;
 		
 		pstmt = null;
