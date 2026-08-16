@@ -434,8 +434,9 @@ p>a:hover{color:#fcd415;}
 					<span>Política de Cookies</span><span class="noneSpace">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span>geral@nosalive.com</span>
 				</div>
 				<div class="line_02">
-					<span>NOS ALIVE FESTIVAL</span><br>
-					</div>
+					<span>NOS ALIVE FESTIVAL</span>
+					<br>
+				</div>
 				<div class="line_03">	
 					<span>2016 © Everything is New</span>
 					</div>
@@ -444,6 +445,7 @@ p>a:hover{color:#fcd415;}
 	
 
 <script>
+
 var s5_height=$('div.s0').height()+$('div.s1').height()+$('div.s2').height()+$('div.s3').height();
 $('div.box_btn1').on('click',function(){
 	$('html,body').stop().animate({scrollTop:s5_height});
@@ -453,12 +455,12 @@ var acc = document.getElementsByClassName("adv");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-    acc[i].onclick = function(){
+    acc[i].onclick = function() {
     	var idx=$(this).index()/2;
         this.classList.toggle("active");
         $('div.icon').eq(idx).toggleClass('rotation');
         this.nextElementSibling.classList.toggle("show");
-  }
+  	}
 };
 
 var body_width=$('div.downn').width()/2;
