@@ -33,10 +33,13 @@ div>title {width:200px;background:#f00}
 					<option value = "017">017</option>
 				</select> - <input type = "text" name = "phone2" size = 10>
 				- <input type = "text" name = "phone3" size = 10><br>
-				<textarea name = "intro" rows = "10" cols = "60">Introduction</textarea>
+				<textarea name = "intro" rows = "10" cols = "60">
+					Introduction
+				</textarea>
 				<br><br>
 				<br/>	
-				<input type = "submit" value = "Submit"/><input type = "reset" value = "Reset"/>		
+				<input type = "submit" value = "Submit"/>
+				<input type = "reset" value = "Reset"/>		
 	</form>
 	</div>
 </body>
