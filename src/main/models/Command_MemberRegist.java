@@ -12,6 +12,7 @@ public class Command_MemberRegist implements Command{
 	
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response){
+		
 		String id = request.getParameter("id");
 		String password = request.getParameter("password");
 		String name = request.getParameter("name");
