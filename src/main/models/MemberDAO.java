@@ -80,8 +80,7 @@ public class MemberDAO {
 				e2.printStackTrace();
 				System.out.println(e2.getMessage());
 			}
-		}
-		
+		}		
 		return bRet;
 	}
 	
@@ -122,8 +121,7 @@ public class MemberDAO {
 				e2.printStackTrace();
 				System.out.println(e2.getMessage());
 			}
-		}
-		
+		}		
 		return bRet;
 	}
 	
@@ -168,8 +166,7 @@ public class MemberDAO {
 				e2.printStackTrace();
 				System.out.println(e2.getMessage());
 			}
-		}
-		
+		}		
 		return bRet;
 	}
 	
@@ -201,8 +198,7 @@ public class MemberDAO {
 				e2.printStackTrace();
 				System.out.println(e2.getMessage());
 			}
-		}
-		
+		}		
 		return ticketList;
 	}
 	
@@ -233,8 +229,7 @@ public class MemberDAO {
 				e2.printStackTrace();
 				System.out.println(e2.getMessage());
 			}
-		}
-		
+		}		
 		return retVal;
 	}
 	
@@ -304,8 +299,7 @@ public class MemberDAO {
 				e2.printStackTrace();
 				System.out.println(e2.getMessage());
 			}
-		}
-		
+		}		
 		return bRet;
 	}
 
@@ -355,8 +349,7 @@ public class MemberDAO {
 				e2.printStackTrace();
 				System.out.println(e2.getMessage());
 			}
-		}
-		
+		}		
 		return retMember;
 	}
 	
@@ -437,8 +430,7 @@ public class MemberDAO {
 				e2.printStackTrace();
 				System.out.println(e2.getMessage());
 			}
-		}
-		
+		}		
 		return list;
 	}
 }
