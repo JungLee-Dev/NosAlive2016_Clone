@@ -302,7 +302,6 @@ public class MemberDAO {
 		}		
 		return bRet;
 	}
-
 	
 	// Get Member Information
 	public MemberDTO getMemberInfo(String id) {
