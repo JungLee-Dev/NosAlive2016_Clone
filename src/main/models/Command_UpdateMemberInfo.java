@@ -54,7 +54,7 @@ public class Command_UpdateMemberInfo implements Command{
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		}else{
+		} else {
 			System.out.println("update failed");
 		}
 	}
